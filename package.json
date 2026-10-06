@@ -16,14 +16,14 @@
     "react-dom": "^18.3.0"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.0",
     "electron": "^28.0.0",
     "electron-builder": "^24.9.0",
-    "vite": "^5.0.0",
-    "@vitejs/plugin-react": "^4.2.0"
+    "vite": "^5.0.0"
   },
   "build": {
-    "appId": "com.universalvaultlabs.vault",
-    "productName": "Universal API Vaultâ„¢",
+    "appId": "com.apivaultlabs.vault",
+    "productName": "Universal API Vault",
     "copyright": "Â© 2026 Universal Vault Labsâ„¢ â„¢ Protected",
     "files": [
       "dist/**/*",
@@ -31,7 +31,9 @@
     ],
     "win": {
       "target": "nsis",
-      "icon": "build/icon.ico"
+      "icon": "build/icon.ico",
+      "publisherName": "API VAULT LABS",
+      "verifyUpdateCodeSignature": "false"
     },
     "mac": {
       "target": "dmg"
@@ -39,5 +41,6 @@
     "linux": {
       "target": "AppImage"
     }
-  }
+  },
+  "author": "API VAULT LABS"
 }
