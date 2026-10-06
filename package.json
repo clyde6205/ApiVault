@@ -31,7 +31,7 @@
     ],
     "win": {
       "target": "nsis",
-      "icon": "build/icon.ico",
+      "icon": "public/icon.ico",
       "publisherName": "API VAULT LABS",
       "verifyUpdateCodeSignature": "false"
     },
